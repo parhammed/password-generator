@@ -18,6 +18,7 @@ def random_str(length: int = None, *, chars: Iterable[str] = [ascii_lowercase, d
 
 if __name__ == "__main__":
     from pyperclip import copy
-    print(random_str())
-    copy(random_str())
+    password = random_str()
+    print(password)
+    copy(password)
     input("press <Enter> to quit: ")
